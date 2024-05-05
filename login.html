@@ -59,12 +59,12 @@
                         <a href="" style="display: flex; width: 100%; height: 100%;"><img src=".\img\googleicon.jpg" alt=""></a>
                     </div>
                 </div>
-                <form action="index.html" method="post">
+                <form id="loginForm" id="loginForm">
                     <div id="loginmain" style="position: relative;">
                         <p>USERNAME</p>
-                        <input type="text" name="username" class="textbox" required>
+                        <input type="text" id="username" name="username" class="textbox" required>
                         <p>PASSWORD</p>
-                        <input type="password" name="password" class="textbox" required style="margin-bottom: 2%;">
+                        <input type="password" id="passwordx" name="password" class="textbox" required style="margin-bottom: 2%;">
 
                         <input type="checkbox" id="agree" value="agree">
                         <span>Remember</span>
@@ -74,9 +74,32 @@
                             <input type="submit" value="LOGIN" id="loginbutton">
                             <p>Don't have an account? <a href="#" onclick="showsignup()">Create account</a></p>
                         </div>
-
                     </div>
                 </form>
+
+                <script>
+                    document.getElementById("loginForm").addEventListener("submit", function(event) {
+                        event.preventDefault();
+
+                        var username = document.getElementById("username").value;
+                        var passwordx = document.getElementById("passwordx").value;
+
+                        if (username === "admin" && passwordx === "admin123") {
+                            window.location.href = "admin.html";
+                        }else{
+                            window.location.href = "index.html";
+                        }
+                    });
+
+                </script>
+
+
+
+
+
+
+
+
             </div>
         </section>
 
