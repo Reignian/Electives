@@ -374,7 +374,7 @@ nav ul{
     margin-top: 1%;
 }
 #shirts .choose{
-    display: flex;
+    display: none;
     width: 95%;
 }
 #shirts .shirt:hover .choose{
