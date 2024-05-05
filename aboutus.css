@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header div{
+    width: 100%;
+    height: 4vw;
+}
+#home{
+    display: flex;
+    align-items: center;
+}
+#home a{
+    font-size: 2vw;
+    font-weight: 700;
+    margin-left: 2%;
+    text-decoration: none;
+    color: black;
+}
+#top{
+    width: 100%;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#top h1{
+    margin-bottom: 5%;
+    font-size: 3vw;
+}
+#top div{
+    display: flex;
+    width: 45%;
+    height: 65%;
+    animation: slide 1s forwards;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+#top2{
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top2 h2{
+    font-size: 2.5vw;
+}
+
+#mainmain{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#mid1{
+    width: 100%;
+    height: 35vw;
+    display: grid;
+    grid-template-columns: 37% 58%;
+    column-gap: 5%;
+}
+#forimage1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#image1{
+    width: 80%;
+    height: 90%;
+}
+#mid1 h3{
+    font-size: 1.9vw;;
+}
+#mid1 p{
+    font-size: 1.5vw;
+    line-height: 1.75;
+    text-indent: 2vw;
+}
+
+#mid2{
+    width: 100%;
+    height: 34vw;
+    display: grid;
+    grid-template-columns: 48% 47%;
+    column-gap: 5%;
+}
+#forimage2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#forimage2 #image2{
+    height: 75%;
+    width: 100%;
+}
+#mid2 p{
+    font-size: 1.5vw;
+    line-height: 1.75;
+    text-indent: 2vw;
+    text-align: right;
+}
+#forimage3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vw;
+}
+#image3{
+    width: 95%;
+    height: 100%;
+}
+#paragraph3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#paragraph3 h1{
+    font-size: 2vw;
+}
+
+main img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+#foot{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#foot .col{
+    height: 7vw;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#foot1{
+    display: flex;
+    height: 90%;
+    width: 51%;
+}
+#foot2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 80%;
+    color: aliceblue;
+    font-size: .8vw;
+}
+#foot3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 30%;
+}
+#foot3 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+}
+#foot3 a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1vw;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#foot4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+}
+#foot4 #find{
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+#foot4 #socs{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 40%;
+}
+#socs a{
+    margin-top: .5vw;
+    width: 18%;
+    height: 90%;
+    border-radius: 50% ;
+    overflow: hidden;
+}
+#socs a img{
+    width: 100%;
+    height: 100%;
+}
+#foot5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 80%;
+}
+#foot5 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+#foot5 a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: .8vw;
+    text-decoration: none;
+    color: aliceblue;
+}
+footer li{
+    list-style: none;
+    margin-bottom: .5vw;
+}

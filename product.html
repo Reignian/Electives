@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="products.css">
+    <script src="products.js"></script>
+</head>
+<body>
+    <div id="account">
+        <div id="accountcontainer">
+            <div id="x">
+                <a href="#" onclick="hideaccount()"><img src="./img/backicon.png" alt=""></a>
+            </div>
+            <div id="dp">
+                <a href=""><img src=".\img\accounticon2.png" alt=""></a>
+                <span style="font-size: 1.5vw; font-weight: 600;">JUAN DELA CRUZ</span>
+            </div>
+            <div id="accountnav">
+                <ul>
+                    <li><a href="account.html"><span><img src=".\img\ordersicon.png" alt=""></span>Orders</a></li>
+                    <li><a href="account.html"><span><img src=".\img\carticon.png" alt=""></span>Cart</a></li>
+                    <li><a href=""><span><img src=".\img\notificationicon.png" alt=""></span>Notification</a></li>
+                    <li><a href=""><span><img src=".\img\profiledetailsicon.png" alt=""></span>Profile Details</a></li>
+                    <li><a href=""><span><img src=".\img\helpcentericon.png" alt=""></span>Help Center</a></li>
+                    <li><a href=""><span><img src=".\img\logouticon.png" alt=""></span>Logout</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile">
+        <div id="mobilecontainer">
+            <div id="x">
+                <a href="#" onclick="hidenavigation()"><img src="./img/backicon2.png" alt=""></a>
+            </div>
+
+            <div id="mobilenavelements">
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="#" >PRODUCTS</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div id="headlogo">
+            <div id="shuttleprime">
+                <img src=".\img\logo.png" alt="" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <div id="mobilenav">
+                        <a href="#" onclick="shownavigation()">
+                            <img src=".\img\3lines.png" alt="">
+                        </a>
+                    </div>
+
+                    <li class="navlist"><a href="index.html">HOME</a></li>
+                    <li class="navlist"><a href="news.html">NEWS</a></li>
+                    <li class="navlist"><a href="#" >PRODUCTS</a></li>
+                    <li class="navlist"><a href="aboutus.html">ABOUT</a></li>
+
+                    <div id="accdetails" class="navlist">
+                        <input type="text" name="search" id="searchbar">
+                        <a href="#" onclick="showsearch()">
+                            <img src=".\img\searchicon.png" alt="" id="searchicon">
+                        </a>
+                        <a href="account.html"><img src=".\img\carticon2.png" alt=""></a>
+                        <a href="#" onclick="showaccount()" id="accounticon">
+                            <img src=".\img\accounticon.png" alt="">
+                        </a>
+                    </div>
+
+                    <div id="accdetails2" class="navlist">
+                        <a href="#" onclick="hidesearch()">
+                            <img src=".\img\searchicon.png" alt="" id="searchicon">
+                        </a>
+                        <a href="account.html"><img src=".\img\carticon2.png" alt=""></a>
+                        <a href="#" onclick="showaccount()" id="accounticon">
+                            <img src=".\img\accounticon.png" alt="">
+                        </a>
+                    </div>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <img src=".\img\prodcover1.jpeg" alt=""  id="prodad1" class="fade">
+        <img src=".\img\prodcover2.jpg" alt="" id="prodad2" class="fade">
+        <img src=".\img\prodcover3.jpeg" alt="" id="prodad3" class="fade">
+        <img src=".\img\prodcover4.jpg" alt="" id="prodad4" class="fade">
+        <img src=".\img\prodcover5.jpg" alt="" id="prodad5" class="fade">
+
+        <section id="navproduct">
+            <div class="products">
+                <ul>
+                    <li><a href="#" onclick="shirts()">SHIRTS</a></li>
+                    <li><a href="#" onclick="shoes()">SHOES</a></li>
+                    <li><a href="#" onclick="rackets()">RACKETS</a></li>
+                    <li><a href="#" onclick="bags()">BAGS</a></li>
+                    <li><a href="#" onclick="strings()">STRINGS</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="shirts">
+
+            <div class="filter">
+                <div>FILTER</div>
+                <ul>
+                    <li><a href="">Highest price</a></li>
+                    <li><a href="">Lowest Price</a></li>
+                </ul>
+            <div>CATEGORIES</div>
+                <ul>
+                    <li><a href="">T-Shirt</a></li>
+                </ul>
+            </div>
+
+            <div class="items">
+                <div class="shirt">
+                    <div class="image">
+                        <img src=".\img\shirts\blue.png" alt="">  
+                    </div>
+                    <p class="name">BLUE</p>
+                    <p class="price">₱499</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="shirt">
+                    <div class="image">
+                        <img src=".\img\shirts\greenmocha.jpg" alt="">
+                    </div>
+                    <p class="name">GREEN MOCHA</p>
+                    <p class="price">₱499</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="shirt">
+                    <div class="image">
+                        <img src=".\img\shirts\heart.jpg" alt="">
+                    </div>
+                    <p class="name">HEART</p>
+                    <p class="price">₱549</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="shirt">
+                    <div class="image">
+                        <img src=".\img\shirts\red.png" alt="">
+                    </div>
+                    <p class="name">RED</p>
+                    <p class="price">₱475</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="shirt">
+                    <div class="image">
+                        <img src=".\img\shirts\violet.jpg" alt="">
+                    </div>
+                    <p class="name">VIOLET</p>
+                    <p class="price">₱499</p>
+                    <div class="choose">
+                        <form action="">
+                        <a href="order.html">
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a href="order.html">BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="shirt">
+                    <div class="image">
+                        <img src=".\img\shirts\whiteblack.jpg" alt="">
+                    </div>
+                    <p class="name">WHITE BLACK</p>
+                    <p class="price">₱499</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="shirt">
+                    <div class="image">
+                        <img src=".\img\shirts\yearofthedragon.jpg" alt="">
+                    </div>
+                    <p class="name">YEAR OF THE DRAGON</p>
+                    <p class="price">₱549</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="shirt">
+                    <div class="image">
+                        <img src=".\img\shirts\yellow.png" alt="">
+                    </div>
+                    <p class="name">YELLOW</p>
+                    <p class="price">₱475</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="shoes">
+
+            <div class="filter">
+                <div>FILTER</div>
+                    <ul>
+                        <li><a href="">Highest price</a></li>
+                        <li><a href="">Lowest Price</a></li>
+                    </ul>
+                <div>CATEGORIES</div>
+                    <ul>
+                        <li><a href="">Shoes</a></li>
+                    </ul>
+                <div>BRAND</div>
+                    <ul>
+                        <li><a href="">Li-Ning</a></li>
+                        <li><a href="">Victor</a></li>
+                        <li><a href="">Yonex</a></li>
+                    </ul>
+            </div>
+
+            <div class="items">
+
+                <div class="shoe" id="almightyv">
+                    <div class="image">
+                        <img src=".\img\shoes\almightyblue.png" alt="" style="padding-top: 10%;">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\shoes\almightyblue.png" alt="">
+                            <img src=".\img\shoes\almightygreenorange.png" alt="">
+                            <img src=".\img\shoes\almightyviolet.png" alt="">
+                            <img src=".\img\shoes\almightywhite.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">LI-NING ALMIGHTY V</p>
+                    <p class="price">₱4,038</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shoe" id="bladelite">
+                    <div class="image">
+                        <img src=".\img\shoes\bladelitered.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\shoes\bladelitered.png" alt="">
+                            <img src=".\img\shoes\bladeliteblack.png" alt="">
+                            <img src=".\img\shoes\bladelitewhite.png" alt="">
+                        </div>
+                    </div>
+
+                    <p class="name">LI-NING BLADE LITE</p>
+                    <p class="price">₱5,425</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shoe" id="sh-lyd">
+                    <div class="image">
+                        <img src=".\img\shoes\SH-LYDgreen.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\shoes\SH-LYDgreen.png" alt="">
+                            <img src=".\img\shoes\SH-LYDpink.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">VICTOR SH-LYD</p>
+                    <p class="price">₱2,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shoe" id="sh-s80">
+                    <div class="image">
+                        <img src=".\img\shoes\SH-S80orange.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\shoes\SH-S80orange.png" alt="">
+                            <img src=".\img\shoes\SH-S80green.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">VICTOR SH-S80</p>
+                    <p class="price">₱2,100</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shoe" id="sh-p9200">
+                    <div class="image">
+                        <img src=".\img\shoes\SH-P9200yellow.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\shoes\SH-P9200yellow.png" alt="">
+                            <img src=".\img\shoes\SH-P9200maroon.png" alt="">
+                            <img src=".\img\shoes\SH-P9200white.png" alt="">
+                        </div>
+                    </div>
+
+                    <p class="name">VICTOR SH-P9200</p>
+                    <p class="price">₱3,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shoe" id="sh8500">
+                    <div class="image">
+                        <img src=".\img\shoes\SH8500violet.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\shoes\SH8500violet.png" alt="">
+                            <img src=".\img\shoes\SH8500yellow.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">VICTOR SH8500</p>
+                    <p class="price">₱3,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shoe" id="aerusz">
+                    <div class="image">
+                        <img src=".\img\shoes\aerusorangered.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\shoes\aerusorangered.png" alt="">
+                            <img src=".\img\shoes\aeruscoral.png" alt="">
+                            <img src=".\img\shoes\aerusbluegray.png" alt="">
+                            <img src=".\img\shoes\aeruscyan.png" alt="">
+                            <img src=".\img\shoes\aerusmint.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX AERUS Z</p>
+                    <p class="price">₱2,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shoe" id="comfortz">
+                    <div class="image">
+                        <img src=".\img\shoes\comfortzmint.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\shoes\comfortzmint.png" alt="">
+                            <img src=".\img\shoes\comfortzred.png" alt="">
+                        </div>
+                    </div>
+
+                    <p class="name">YONEX COMFORT Z</p>
+                    <p class="price">₱2,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shoe" id="infinity">
+                    <div class="image">
+                        <img src=".\img\shoes\infinityred.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\shoes\infinityred.png" alt="">
+                            <img src=".\img\shoes\infinityblack.png" alt="">
+                            <img src=".\img\shoes\infinityblue.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX INFINITY</p>
+                    <p class="price">₱2,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shoe">
+                    <div class="image" id="65">
+                        <img src=".\img\shoes\65blue.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\shoes\65blue.png" alt="">
+                            <img src=".\img\shoes\65black.png" alt="">
+                            <img src=".\img\shoes\65green.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX 65</p>
+                    <p class="price">₱1,900</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="rackets">
+
+            <div class="filter">
+                <div>FILTER</div>
+                    <ul>
+                        <li><a href="">Highest price</a></li>
+                        <li><a href="">Lowest Price</a></li>
+                    </ul>
+                <div>CATEGORIES</div>
+                    <ul>
+                        <li><a href="">Ability</a></li>
+                        <li><a href="">Boost</a></li>
+                        <li><a href="">Clear</a></li>
+                        <li><a href="">Combat</a></li>
+                        <li><a href="">Drive</a></li>
+                        <li><a href="">Feel</a></li>
+                        <li><a href="">Game</a></li>
+                        <li><a href="">Instinct</a></li>
+                        <li><a href="">Play</a></li>
+                        <li><a href="">Pro</a></li>
+                        <li><a href="">Tour</a></li>
+                        <li><a href="">Z</a></li>
+                    </ul>
+                <div>BRAND</div>
+                    <ul>
+                        <li><a href="">Li-Ning</a></li>
+                        <li><a href="">Victor</a></li>
+                        <li><a href="">Yonex</a></li>
+                    </ul>
+                <div>SERIES</div>
+                    <ul>
+                        <li><a href="">Aeronaut</a></li>
+                        <li><a href="">Astrox</a></li>
+                        <li><a href="">Brave Sword</a></li>
+                        <li><a href="">Tectonic</a></li>
+                        <li><a href="">Thruster K</a></li>
+                        <li><a href="">Nanoflare</a></li>
+                    </ul>
+            </div>
+            
+            <div class="items">
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\4000.png" alt="">  
+                    </div>
+                    <p class="name">LI-NING AERONAUT 4000</p>
+                    <p class="price">₱5,599</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\6000.png" alt="">  
+                    </div>
+                    <p class="name">LI-NING AERONAUT 6000</p>
+                    <p class="price">₱6,870</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\7000.png" alt="">  
+                    </div>
+                    <p class="name">LI-NING AERONAUT 7000</p>
+                    <p class="price">₱7,265</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\8000.png" alt="">  
+                    </div>
+                    <p class="name">LI-NING AERONAUT 8000</p>
+                    <p class="price">₱8,390</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\9000.png" alt="">  
+                    </div>
+                    <p class="name">LI-NING AERONAUT 9000</p>
+                    <p class="price">₱9,700</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\TECTONIC-1.png" alt="">  
+                    </div>
+                    <p class="name">LI-NING TECTONIC</p>
+                    <p class="price">₱4,740</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\BRS-1133.png" alt="">  
+                    </div>
+                    <p class="name">VICTOR BRAVE SWORD</p>
+                    <p class="price">₱2,436</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\TK-3399.png" alt="">  
+                    </div>
+                    <p class="name">VICTOR THRUSTER K</p>
+                    <p class="price">₱3,291</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\ARCSABER7PLAY.png" alt="" class="yonex">  
+                    </div>
+                    <p class="name">YONEX ARCSABER 7</p>
+                    <p class="price">₱3,924</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\ARCSABER11PLAY.png" alt="" class="yonex">  
+                    </div>
+                    <p class="name">YONEX ARCSABER 11</p>
+                    <p class="price">₱3,999</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\ASTROX77PLAY.png" alt="">  
+                    </div>
+                    <p class="name">YONEX ASTROX 77</p>
+                    <p class="price">₱3,999</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\ASTROX88DTOUR.png" alt="" class="yonex">  
+                    </div>
+                    <p class="name">YONEX ASTROX 88D</p>
+                    <p class="price">₱4,761</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\ASTROX88SGAME.png" alt="" class="yonex">  
+                    </div>
+                    <p class="name">YONEX ASTROX 88S</p>
+                    <p class="price">₱5,072</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\ASTROX99GAME.png" alt="" class="yonex">  
+                    </div>
+                    <p class="name">YONEX ASTROX 99</p>
+                    <p class="price">₱8,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\ASTROX100GAME.png" alt="" class="yonex">  
+                    </div>
+                    <p class="name">YONEX ASTROX 100</p>
+                    <p class="price">₱14,485</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\NANOFLARENEXTAGE.PNG" alt="" class="yonex">  
+                    </div>
+                    <p style="font-size: 1.1vw;">YONEX NANOFLARE NEXTAGE</p>
+                    <p class="price">₱7,613</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\NANOFLARE002ABILITY.png" alt="">  
+                    </div>
+                    <p class="name">YONEX NANOFLARE 002</p>
+                    <p class="price">₱4,371</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\NANOFLARE800GAME.png" alt="" class="yonex">  
+                    </div>
+                    <p class="name">YONEX NANOFLARE 800</p>
+                    <p class="price">₱7,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="racket">
+                    <div class="image">
+                        <img src=".\img\Rackets\NANOFLARE1000GAME.png" alt="">  
+                    </div>
+                    <p class="name">YONEX NANOFLARE 1000</p>
+                    <p class="price">₱11,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="bags">
+            <div class="filter">
+                <div>FILTER</div>
+                    <ul>
+                        <li><a href="">Highest price</a></li>
+                        <li><a href="">Lowest Price</a></li>
+                    </ul>
+                <div>CATEGORIES</div>
+                    <ul>
+                        <li><a href="">Backpack</a></li>
+                        <li><a href="">Racket bag</a></li>
+                        <li><a href="">Tournament bag</a></li>
+                    </ul>
+                <div>BRAND</div>
+                    <ul>
+                        <li><a href="">Li-Ning</a></li>
+                        <li><a href="">Victor</a></li>
+                        <li><a href="">Yonex</a></li>
+                    </ul>
+            </div>
+
+            <div class="items">
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\CRATO-gold.png" alt="" style="width: 100%; height: 100%;">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\CRATO-green.png" alt="">
+                            <img src=".\img\bags\CRATO-royal.png" alt="">
+                            <img src=".\img\bags\CRATO-gold.png" alt="">
+                            <img src=".\img\bags\CRATO-yellow.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">LI-NING CRATO</p>
+                    <p class="category">TOURNAMENT BAG</p>
+                    <p class="price">₱3,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\STRIPE-black.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\STRIPE-black.png" alt="">
+                            <img src=".\img\bags\STRIPE-navy.png" alt="">
+                            <img src=".\img\bags\STRIPE-royal.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">LI-NING STRIPE</p>
+                    <p class="category">RACKET BAG</p>
+                    <p class="price">₱1,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\BR8008-black.png" alt="" style="width: 100%; height: 100%;">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\BR8008-black.png" alt="">
+                            <img src=".\img\bags\BR8008-blue.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">VICTOR BR8008</p>
+                    <p class="category">BACKPACK</p>
+                    <p class="price">₱2,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\BR7003-red.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\BR7003-red.png" alt="">
+                            <img src=".\img\bags\BR7003-green.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">VICTOR BR7003</p>
+                    <p class="category">BACKPACK</p>
+                    <p class="price">₱2,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\BR7603-red.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img class="carticon1" src=".\img\bags\BR7603-red.png" alt="">
+                            <img src=".\img\bags\BR7603-green.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">VICTOR BR7603</p>
+                    <p class="category">TOURNAMENT BAG</p>
+                    <p class="price">₱5,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\ACTIVEbiege-B.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags/ACTIVEbiege-B.png" alt="">
+                            <img src=".\img\bags/ACTIVElilac-B.png" alt="">
+                            <img src=".\img\bags/ACTIVEblack-B.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX ACTIVE</p>
+                    <p class="category">BACKPACK</p>
+                    <p class="price">₱3,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\ACTIVEbiege-R.png" alt="" >  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags/ACTIVEbiege-R.png" alt="">
+                            <img src=".\img\bags/ACTIVElilac-R.png" alt="">
+                            <img src=".\img\bags/ACTIVEblack-R.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX ACTIVE</p>
+                    <p class="category">RACKET BAG</p>
+                    <p class="price">₱3,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\ACTIVEbiege-T.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags/ACTIVEbiege-T.png" alt="">
+                            <img src=".\img\bags/ACTIVElilac-T.png" alt="">
+                            <img src=".\img\bags/ACTIVEblack-T.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX ACTIVE</p>
+                    <p class="category">TOURNAMENT BAG</p>
+                    <p class="price">₱4,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\EXPERTwhite-B.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\EXPERTwhite-B.png" alt="">
+                            <img src=".\img\bags\EXPERTblack-B.png" alt="">
+                            <img src=".\img\bags\EXPERTgreen-B.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX EXPERT</p>
+                    <p class="category">BACKPACK</p>
+                    <p class="price">₱2,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\EXPERTwhite-R.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\EXPERTwhite-R.png" alt="">
+                            <img src=".\img\bags\EXPERTblack-R.png" alt="">
+                            <img src=".\img\bags\EXPERTgreen-R.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX EXPERT</p>
+                    <p class="category">RACKET BAG</p>
+                    <p class="price">₱2,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\EXPERTwhite-T.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\EXPERTwhite-T.png" alt="">
+                            <img src=".\img\bags\EXPERTblack-T.png" alt="">
+                            <img src=".\img\bags\EXPERTgreen-T.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX EXPERT</p>
+                    <p class="category">TOURNAMENT BAG</p>
+                    <p class="price">₱3,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\LIMITEDPRO-B.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            
+                        </div>
+                    </div>
+    
+                    <p class="name">YONEX LIMITED PRO</p>
+                    <p class="category">BACKPACK</p>
+                    <p class="price">₱4,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\LIMITEDPRO-R.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            
+                        </div>
+                    </div>
+    
+                    <p class="name">YONEX LIMITED PRO</p>
+                    <p class="category">RACKET BAG</p>
+                    <p class="price">₱4,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\LIMITEDPRO-T.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            
+                        </div>
+                    </div>
+    
+                    <p class="name">YONEX LIMITED</p>
+                    <p class="category">TOURNAMENT BAG</p>
+                    <p class="price">₱5,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\PROblack-B.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\PROblack-B.png" alt="">
+                            <img src=".\img\bags\PROblue-B.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX PRO</p>
+                    <p class="category">BACKPACK</p>
+                    <p class="price">₱3,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\PROgrape-R.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\PROgrape-R.png" alt="">
+                            <img src=".\img\bags\PROblue-R.png" alt="">
+                            <img src=".\img\bags\PROred-R.png" alt="">
+                            <img src=".\img\bags\PROblack-R.png" alt="">
+                            <img src=".\img\bags\PROgreen-R.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX PRO</p>
+                    <p class="category">RACKET BAG</p>
+                    <p class="price">₱4,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\PROgrape-T.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\PROgrape-T.png" alt="">
+                            <img src=".\img\bags\PROblue-T.png" alt="">
+                            <img src=".\img\bags\PROred-T.png" alt="">
+                            <img src=".\img\bags\PROsilverblack-T.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX PRO</p>
+                    <p class="category">TOURNAMENT BAG</p>
+                    <p class="price">₱4,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\TEAMpink-B.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\TEAMpink-B.png" alt="">
+                            <img src=".\img\bags\TEAMgreen-B.png" alt="">
+                            <img src=".\img\bags\TEAMred-B.png" alt="">
+                            <img src=".\img\bags\TEAMblue-B.png" alt="">
+                            <img src=".\img\bags\TEAMblack-B.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX TEAM</p>
+                    <p class="category">BACKPACK</p>
+                    <p class="price">₱4,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\TEAMpink-R.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\TEAMpink-R.png" alt="">
+                            <img src=".\img\bags\TEAMgreen-R.png" alt="">
+                            <img src=".\img\bags\TEAMred-R.png" alt="">
+                            <img src=".\img\bags\TEAMblue-R.png" alt="">
+                            <img src=".\img\bags\TEAMblack-R.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX TEAM</p>
+                    <p class="category">RACKET BAG</p>
+                    <p class="price">₱4,500</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="image">
+                        <img src=".\img\bags\TEAMpink-T.png" alt="">  
+                    </div>
+                    <div class="colors">
+                        <div class="colorimage">
+                            <img src=".\img\bags\TEAMpink-T.png" alt="">
+                            <img src=".\img\bags\TEAMgreen-T.png" alt="">
+                            <img src=".\img\bags\TEAMblue-T.png" alt="">
+                            <img src=".\img\bags\TEAMblack-T.png" alt="">
+                        </div>
+                    </div>
+                    <p class="name">YONEX TEAM</p>
+                    <p class="category">TOURNAMENT BAG</p>
+                    <p class="price">₱5,000</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <section id="strings">
+
+            <div class="filter">
+                <div>FILTER</div>
+                    <ul>
+                        <li><a href="">Highest price</a></li>
+                        <li><a href="">Lowest Price</a></li>
+                    </ul>
+                <div>CATEGORIES</div>
+                    <ul>
+                        <li><a href="">String</a></li>
+                    </ul>
+                <div>BRAND</div>
+                    <ul>
+                        <li><a href="">Yonex</a></li>
+                    </ul>
+                <div>Series</div>
+                    <ul>
+                        <li><a href="">Aerobite</a></li>
+                        <li><a href="">BG 65</a></li>
+                        <li><a href="">BG 66</a></li>
+                        <li><a href="">BG 80</a></li>
+                        <li><a href="">Exbolt</a></li>
+                    </ul>
+            </div>
+
+            <div class="items">
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\AEROBITE.png" alt="">  
+                    </div>
+                    <p class="name">YONEX AEROBITE</p>
+                    <p class="price">₱700</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\AEROBITE BOOST.png" alt="">  
+                    </div>
+                    <p class="name">YONEX AEROBITE BOOST</p>
+                    <p class="price">₱890</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\BG65.png" alt="">  
+                    </div>
+                    <p class="name">YONEX BG65</p>
+                    <p class="price">₱560</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\BG65-titanium.png" alt="">  
+                    </div>
+                    <p class="name">YONEX BG65 TITANIUM</p>
+                    <p class="price">₱620</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\BG66-force.png" alt="">  
+                    </div>
+                    <p class="name">YONEX BG66 FORCE</p>
+                    <p class="price">₱700</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\BG66-ultimax.png" alt="">  
+                    </div>
+                    <p class="name">YONEX BG66 ULTIMAX</p>
+                    <p class="price">₱720</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\BG80.png" alt="">  
+                    </div>
+                    <p class="name">YONEX BG80</p>
+                    <p class="price">₱800</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\BG80-power.png" alt="">  
+                    </div>
+                    <p class="name">YONEX BG80 POWER</p>
+                    <p class="price">₱860</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\EXBOLT63.png" alt="">  
+                    </div>
+                    <p class="name">YONEX EXBOLT 63</p>
+                    <p class="price">₱580</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\EXBOLT65.png" alt="">  
+                    </div>
+                    <p class="name">YONEX EXBOLT 65</p>
+                    <p class="price">₱650</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="string">
+                    <div class="image">
+                        <img src=".\img\strings\EXBOLT68.png" alt="">  
+                    </div>
+                    <p class="name">YONEX EXBOLT 68</p>
+                    <p class="price">₱600</p>
+                    <div class="choose">
+                        <form action="">
+                        <a>
+                            <img class="carticon1" src=".\img\carticon.png" alt="">
+                            <img class="carticon" src="./img/carticon2.png" alt="">
+                            ADD TO CART
+                        </a>
+                        <a>BUY NOW</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="foot">
+            <div class="col">
+                <div id="foot1">
+                    <img src="./img/footlog.png" alt="" style="width: 100%; height: 100%;">
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot2">
+                    <p>Sports and Recreation</p>
+                    <br>
+                    <p>Contact Us: +63-936-407-6841</p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot3">
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot4">
+                    <div id="find">FIND US ON</div>
+                    <div id="socs">
+                        <a href="https://web.facebook.com/ShuttlePrime"><img src=".\img\fbicon.png" alt=""></a>
+                        <a href="https://www.tiktok.com/@shuttleprimeph"><img src=".\img\tiktokicon.jpg" alt=""></a>
+                        <a href="https://www.instagram.com/explore/tags/shuttleprime/?hl=en" alt=""><img src=".\img\igicon.jpg"></a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot5">
+                    <ul>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Accessibility</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="https://web.facebook.com/media/set/?vanity=100052497353745&set=a.114292693663975">Proof of Successful Transactions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div id="mobile">
+        <div id="mobilecontainer">
+            <div id="x">
+                <a href="#" onclick="hidenavigation()"><img src="./img/backicon2.png" alt=""></a>
+            </div>
+
+            <div id="mobilenavelements">
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="product.html" >PRODUCTS</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header>
+
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <div id="mobilenav">
+                        <a href="#" onclick="shownavigation()">
+                            <img src=".\img\3lines.png" alt="">
+                        </a>
+                    </div>
+
+                    <li class="navlist"><a href="index.html">HOME</a></li>
+                    <li class="navlist"><a href="news.html">NEWS</a></li>
+                    <li class="navlist"><a href="product.html" >PRODUCTS</a></li>
+                    <li class="navlist"><a href="aboutus.html">ABOUT</a></li>
+
+                    <div id="accdetails" class="navlist">
+                        <input type="text" name="search" id="searchbar">
+                        <a href="#" onclick="showsearch()">
+                            <img src=".\img\searchicon.png" alt="" id="searchicon">
+                        </a>
+                        
+                    </div>
+
+                    <div id="accdetails2" class="navlist">
+                        <a href="#" onclick="hidesearch()">
+                            <img src=".\img\searchicon.png" alt="" id="searchicon">
+                        </a>
+                        
+                    </div>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="navigation">
+            <nav id="dp">
+                <div id="image">
+                    <img src="./img/accounticon2.png" alt="">
+                </div>
+                <div id="adminname">
+                    <h1>Admin</h1>
+                </div>
+            </nav>
+            <nav id="links">
+                <ul>
+                    <li><a href="#" onclick="dashboardadmin()">Dashboard</a></li>
+                    <li><a href="#" onclick="ordersadmin()">Orders</a></li>
+                    <li><a href="#" onclick="inventoryadmin()" style="font-size: 1.7vw;">Products Inventory</a></li>
+                    <li><a href="#">Notification</a></li>
+                    <li><a href="#">User Accounts</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="dashboardadmin">
+            <div id="dashboardsec">
+                <a href="#" id="graph1"><img src="./img/Screenshot1.png" alt=""></a>
+                <a href="#" id="graph2"><img src="./img/Screenshot2.png" alt=""></a></a>
+                <a href="#" id="graph3"><img src="./img/Screenshot3.png" alt=""></a></a>
+                <a href="#" id="graph4"><img src="./img/Screenshot4.png" alt=""></a></a>
+                <a href="#" id="graph5"><img src="./img/Screenshot5.png" alt=""></a></a>
+            </div>
+            
+        </section>
+        
+        <section id="ordersadmin">
+            <div id="orderssec">
+                <div id="ordersnav">
+                    <a href="#" onclick="pends()">Pending</a>
+                    <a href="#" onclick="reqs()" style="font-size: 1.8vw;">Requesting for Cancellation</a>
+                    <a href="#" onclick="onships()">On ship</a>
+                    <a href="#" onclick="completes()">Completed</a>
+                </div>
+                
+                <div id="pendingorders">
+                    <div class="adminorders">
+                        <div class="ferson">
+                            <h2>Juan Dela Cruz</h2>
+                            <h3>09987654321</h3>
+                            <h3>11 Billiard Dr. Baliwasan, Zamboanga City , 7000</h3>
+                        </div>
+                        <div class="itemaru">
+                            <h3>Item: Violet</h3>
+                            <h3>Size: XXS</h3>
+                            <h3>Jersey Name: Juan Dela Cruz</h3>
+                            <h3>Quantity: 1</h3>
+                        </div>
+                        <div class="confirmable">
+                            <h3>Cash on Delivery</h3>
+                            <h2>Total: ₱ 699</h2>
+                        </div>
+                        <form action="">
+                            <input type="submit" value="Confirm">
+                        </form>
+                    </div>
+                </div>
+                <div id="requestorders">
+                    <div class="adminorders">
+                        <div class="ferson">
+                            <h2>Juan Dela Cruz</h2>
+                            <h3>09987654321</h3>
+                            <h3>11 Billiard Dr. Baliwasan, Zamboanga City , 7000</h3>
+                        </div>
+                        <div class="itemaru">
+                            <h3>Item: Violet</h3>
+                            <h3>Size: XXS</h3>
+                            <h3>Jersey Name: Juan Dela Cruz</h3>
+                            <h3>Quantity: 1</h3>
+                        </div>
+                        <div class="confirmable">
+                            <h3>Cash on Delivery</h3>
+                            <h2>Total: ₱ 699</h2>
+                        </div>
+                        <form action="">
+                            <input type="submit" value="Confirm">
+                        </form>
+                    </div>
+                </div>
+                <div id="onshiporders">
+                    <div class="adminorders">
+                        <div class="ferson">
+                            <h2>Juan Dela Cruz</h2>
+                            <h3>09987654321</h3>
+                            <h3>11 Billiard Dr. Baliwasan, Zamboanga City , 7000</h3>
+                        </div>
+                        <div class="itemaru">
+                            <h3>Item: Violet</h3>
+                            <h3>Size: XXS</h3>
+                            <h3>Jersey Name: Juan Dela Cruz</h3>
+                            <h3>Quantity: 1</h3>
+                        </div>
+                        <div class="confirmable">
+                            <h3>Cash on Delivery</h3>
+                            <h2>Total: ₱ 699</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="completedorders">
+                    <div class="adminorders">
+                        <div class="ferson">
+                            <h2>Juan Dela Cruz</h2>
+                            <h3>09987654321</h3>
+                            <h3>11 Billiard Dr. Baliwasan, Zamboanga City , 7000</h3>
+                        </div>
+                        <div class="itemaru">
+                            <h3>Item: Violet</h3>
+                            <h3>Size: XXS</h3>
+                            <h3>Jersey Name: Juan Dela Cruz</h3>
+                            <h3>Quantity: 1</h3>
+                        </div>
+                        <div class="confirmable">
+                            <h3>Cash on Delivery</h3>
+                            <h2>Total: ₱ 699</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="inventoryadmin">
+            <div id="inventorysec">
+                <div id="inventorycontainer">
+                    <a href="#" id="additem" onclick="additem()">
+                        <div id="plus">+</div>
+                        <h1>
+                            Add Item
+                        </h1>
+                    </a>
+
+                    <form id="addingitem" action="#">
+                        <div class="row" id="r0">
+                            <h2>IMAGE:</h2>
+                            <a href="#" id="itemimage">
+                                <div id="image">
+                                    <img src=".\img\addimageicon.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="row" id="r1">
+                            <label for="item">NAME:</label>
+                            <input type="text" id="item" name="item">
+                        </div>
+                        <div class="row" id="r2">
+                            <label for="type">TYPE:</label>
+                            <select name="size" id="type" onchange="
+                            if (this.value=='bag'){
+                                bagtypeselect7.style.display='none'
+                                bagtypeselect.style.display='flex'
+                                bagtypeselect2.style.display='flex'
+                                bagtypeselect8.style.display='flex'
+                            }
+                            else if (this.value=='shirt'){
+                                bagtypeselect7.style.display='flex'
+                                bagtypeselect3.style.display='flex'
+                                bagtypeselect4.style.display='flex'
+                                bagtypeselect.style.display='none'
+                                bagtypeselect2.style.display='none'
+                                bagtypeselect5.style.display='none'
+                                bagtypeselect6.style.display='none'
+                                bagtypeselect8.style.display='none'
+                            }
+                            else if (this.value=='shoes'){
+                                bagtypeselect7.style.display='flex'
+                                bagtypeselect5.style.display='flex'
+                                bagtypeselect6.style.display='flex'
+                                bagtypeselect.style.display='none'
+                                bagtypeselect2.style.display='none'
+                                bagtypeselect3.style.display='none'
+                                bagtypeselect4.style.display='none'
+                                bagtypeselect8.style.display='flex'
+                            }
+                            else if (this.value=='strings'){
+                                bagtypeselect.style.display='none'
+                                bagtypeselect2.style.display='none'
+                                bagtypeselect3.style.display='none'
+                                bagtypeselect4.style.display='none'
+                                bagtypeselect5.style.display='none'
+                                bagtypeselect6.style.display='none'
+                                bagtypeselect7.style.display='none'
+                                bagtypeselect8.style.display='flex'
+                            }
+                            else {
+                                bagtypeselect7.style.display='none'
+                                bagtypeselect.style.display='none'
+                                bagtypeselect2.style.display='none'
+                                bagtypeselect8.style.display='none'
+                            };">
+                                <option value="shirt">Shirt</option>
+                                <option value="shoes">Shoes</option>
+                                <option value="racket">Racket</option>
+                                <option value="bag">Bag</option>
+                                <option value="strings">String</option>
+                            </select>
+                            <label for="bagtype" id="labelbagtype" style="display: none;">BAG TYPE:</label>
+                            <select name="size" id="bagtype" onchange="" style="display: none;">
+                                <option value="none" hidden></option>
+                                <option value="bp">Backpack</option>
+                                <option value="rb">Racket Bag</option>
+                                <option value="tb">Tournament bag</option>
+                            </select>
+                        </div>
+                        <div id="r3">
+                            <label for="itemdesc">DESCRIPTION:</label>
+                            <textarea name="itemdesc" id="itemdesc" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="row" id="r4">
+                            <label for="size" id="labelsizeshirt" style="display: flex;">SIZE:</label>
+                            <select name="size" id="sizeshirt" style="display: flex;">
+                                <option value="none" hidden></option>
+                                <option value="xxs">XXS</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                                <option value="xxl">XXL</option>
+                                <option value="xxxl">XXXL</option>
+                            </select>
+
+                            <label for="size" id="labelsizeshoes" style="display: none;">SIZE (US):</label>
+                            <select name="size" id="sizeshoes" style="display: none;">
+                                <option value="none" hidden></option>
+                                <option value="5">5</option>
+                                <option value="5.5">5.5</option>
+                                <option value="6">6</option>
+                                <option value="6.5">6.5</option>
+                                <option value="7">7</option>
+                                <option value="7.5">7.5</option>
+                                <option value="8">8</option>
+                                <option value="8.5">8.5</option>
+                                <option value="9">9</option>
+                                <option value="9.5">9.5</option>
+                                <option value="10">10</option>
+                                <option value="10.5">10.5</option>
+                                <option value="11">11</option>
+                                <option value="11.5">11.5</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="row" id="r45" style="display: none;">
+                            <label for="color">COLOR:</label>
+                            <input type="text" id="color" name="price">
+                        </div>
+                        <div class="row" id="r5">
+                            <label for="price">PRICE:</label>
+                            <input type="number" id="price" name="price">
+                        </div>
+                        <div class="row" id="r6">
+                            <label for="quantity">QUANTITY:</label>
+                            <input type="number" id="quantity" name="quantity">
+                        </div>
+                        <div class="row" id="r7">
+                            <input type="submit" value="CANCEL" onclick="addeditem()">
+                            <input type="submit" value="ADD" onclick="addeditem()">
+                        </div>
+                    </form>
+
+                    <div id="tablecontainer">
+                        <div id="inventoryhead">
+                            <label for="inventoryfilter">FILTER:</label>
+                            <Select name="inventoryfilter" id="inventoryfilter">
+                                <option value="az">Shirt</option>
+                                <option value="za">Shoes</option>
+                                <option value="hquantity">Racket</option>
+                                <option value="lquantity">Bag</option>
+                                <option value="lquantity">String</option>
+                            </Select>
+                            <label for="inventoryfilter">SORT:</label>
+                            <Select name="inventoryfilter" id="inventoryfilter">
+                                <option value="none" hidden></option>
+                                <option value="az">A-z</option>
+                                <option value="za">Z-a</option>
+                                <option value="hquantity">↑ Quantity</option>
+                                <option value="lquantity">↓ Quantity</option>
+                            </Select>
+                            <span>
+                                <img src=".\img\searchicon2.png" alt="">
+                            </span>
+                            <input type="text" id="inventorysearch" style="width: 10vw; text-indent: 1vw;">
+                        </div>
+                        <div id="tablehead">
+                            <div id="th1">Image</div>
+                            <div id="th2">Name</div>
+                            <div id="th3">Type</div>
+                            <div id="th4">Size</div>
+                            <div id="th5">Price</div>
+                            <div id="th6">Quantity</div>
+                        </div>
+                        <table>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\blue.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">BLUE</td>
+                                <td class="td3">Shirt</td>
+                                <td class="td4">XXXL</td>
+                                <td class="td5">₱ 499</td>
+                                <td class="td6">27</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\blue.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">BLUE</td>
+                                <td class="td3">Shirt</td>
+                                <td class="td4">XXL</td>
+                                <td class="td5">₱ 499</td>
+                                <td class="td6">35</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\blue.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">BLUE</td>
+                                <td class="td3">Shirt</td>
+                                <td class="td4">XL</td><td class="td5">₱ 499</td>
+                                <td class="td6">150</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\blue.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">BLUE</td>
+                                <td class="td3">Shirt</td>
+                                <td class="td4">L</td><td class="td5">₱ 499</td>
+                                <td class="td6">125</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\blue.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">BLUE</td>
+                                <td class="td3">Shirt</td>
+                                <td class="td4">M</td><td class="td5">₱ 499</td>
+                                <td class="td6">250</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\blue.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">BLUE</td>
+                                <td class="td3">Shirt</td>
+                                <td class="td4">S</td><td class="td5">₱ 499</td>
+                                <td class="td6">217</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\blue.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">BLUE</td>
+                                <td class="td3">Shirt</td>
+                                <td class="td4">XS</td><td class="td5">₱ 499</td>
+                                <td class="td6">113</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\blue.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">BLUE</td>
+                                <td class="td3">Shirt</td>
+                                <td class="td4">XXS</td><td class="td5">₱ 499</td>
+                                <td class="td6">84</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\greenmocha.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">GREEN MOCHA</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXXL</td><td class="td5">₱ 499</td>
+                                <td class="td6">13</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\greenmocha.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">GREEN MOCHA</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXL</td><td class="td5">₱ 499</td>
+                                <td class="td6">25</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\greenmocha.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">GREEN MOCHA</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XL</td><td class="td5">₱ 499</td>
+                                <td class="td6">89</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\greenmocha.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">GREEN MOCHA</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">L</td><td class="td5">₱ 499</td>
+                                <td class="td6">121</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\greenmocha.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">GREEN MOCHA</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">M</td><td class="td5">₱ 499</td>
+                                <td class="td6">139</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\greenmocha.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">GREEN MOCHA</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">S</td><td class="td5">₱ 499</td>
+                                <td class="td6">142</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\greenmocha.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">GREEN MOCHA</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XS</td><td class="td5">₱ 499</td>
+                                <td class="td6">75</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\greenmocha.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">GREEN MOCHA</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXS</td><td class="td5">₱ 499</td>
+                                <td class="td6">43</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\heart.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">HEART</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXXL</td><td class="td5">₱ 549</td>
+                                <td class="td6">31</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\heart.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">HEART</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXL</td><td class="td5">₱ 549</td>
+                                <td class="td6">94</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\heart.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">HEART</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XL</td><td class="td5">₱ 549</td>
+                                <td class="td6">181</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\heart.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">HEART</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">L</td><td class="td5">₱ 549</td>
+                                <td class="td6">272</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\heart.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">HEART</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">M</td><td class="td5">₱ 549</td>
+                                <td class="td6">311</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\heart.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">HEART</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">S</td><td class="td5">₱ 549</td>
+                                <td class="td6">64</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\heart.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">HEART</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XS</td><td class="td5">₱ 549</td>
+                                <td class="td6">80</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\heart.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">HEART</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXS</td><td class="td5">₱ 549</td>
+                                <td class="td6">71</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\red.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">RED</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXXL</td><td class="td5">₱ 475</td>
+                                <td class="td6">18</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\red.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">RED</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXL</td><td class="td5">₱ 475</td>
+                                <td class="td6">57</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\red.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">RED</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XL</td><td class="td5">₱ 475</td>
+                                <td class="td6">84</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\red.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">RED</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">L</td><td class="td5">₱ 475</td>
+                                <td class="td6">73</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\red.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">RED</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">M</td><td class="td5">₱ 475</td>
+                                <td class="td6">163</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\red.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">RED</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">S</td><td class="td5">₱ 475</td>
+                                <td class="td6">132</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\red.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">RED</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XS</td><td class="td5">₱ 475</td>
+                                <td class="td6">53</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\red.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">RED</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXS</td><td class="td5">₱ 475</td>
+                                <td class="td6">69</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\violet.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">VIOLET</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXXL</td><td class="td5">₱ 499</td>
+                                <td class="td6">18</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\violet.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">VIOLET</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXL</td><td class="td5">₱ 499</td>
+                                <td class="td6">52</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\violet.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">VIOLET</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XL</td><td class="td5">₱ 499</td>
+                                <td class="td6">132</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\violet.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">VIOLET</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">L</td><td class="td5">₱ 499</td>
+                                <td class="td6">213</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\violet.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">VIOLET</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">M</td><td class="td5">₱ 499</td>
+                                <td class="td6">51</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\violet.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">VIOLET</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">S</td><td class="td5">₱ 499</td>
+                                <td class="td6">155</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\violet.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">VIOLET</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XS</td><td class="td5">₱ 499</td>
+                                <td class="td6">63</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\violet.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">VIOLET</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXXL</td><td class="td5">₱ 499</td>
+                                <td class="td6">35</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\whiteblack.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">WHITE BLACK</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXL</td><td class="td5">₱ 499</td>
+                                <td class="td6">58</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\whiteblack.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">WHITE BLACK</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XL</td><td class="td5">₱ 499</td>
+                                <td class="td6">86</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\whiteblack.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">WHITE BLACK</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">L</td><td class="td5">₱ 499</td>
+                                <td class="td6">63</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\whiteblack.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">WHITE BLACK</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">M</td><td class="td5">₱ 499</td>
+                                <td class="td6">142</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\whiteblack.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">WHITE BLACK</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">S</td><td class="td5">₱ 499</td>
+                                <td class="td6">59</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\whiteblack.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">WHITE BLACK</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XS</td><td class="td5">₱ 499</td>
+                                <td class="td6">25</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\whiteblack.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">WHITE BLACK</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXS</td><td class="td5">₱ 499</td>
+                                <td class="td6">52</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\whiteblack.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">WHITE BLACK</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXXL</td><td class="td5">₱ 499</td>
+                                <td class="td6">21</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yearofthedragon.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2" style="font-size: 1.3vw;">YEAR OF THE DRAGON</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXXL</td><td class="td5">₱ 549</td>
+                                <td class="td6">24</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yearofthedragon.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2" style="font-size: 1.3vw;">YEAR OF THE DRAGON</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXL</td><td class="td5">₱ 549</td>
+                                <td class="td6">83</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yearofthedragon.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2" style="font-size: 1.3vw;">YEAR OF THE DRAGON</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XL</td><td class="td5">₱ 549</td>
+                                <td class="td6">153</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yearofthedragon.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2" style="font-size: 1.3vw;">YEAR OF THE DRAGON</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">L</td><td class="td5">₱ 549</td>
+                                <td class="td6">199</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yearofthedragon.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2" style="font-size: 1.3vw;">YEAR OF THE DRAGON</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">M</td><td class="td5">₱ 549</td>
+                                <td class="td6">297</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yearofthedragon.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2" style="font-size: 1.3vw;">YEAR OF THE DRAGON</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">S</td><td class="td5">₱ 549</td>
+                                <td class="td6">214</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yearofthedragon.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2" style="font-size: 1.3vw;">YEAR OF THE DRAGON</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XS</td><td class="td5">₱ 549</td>
+                                <td class="td6">64</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yearofthedragon.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2" style="font-size: 1.3vw;">YEAR OF THE DRAGON</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXS</td><td class="td5">₱ 549</td>
+                                <td class="td6">43</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yellow.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">YELLOW</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXXL</td><td class="td5">₱ 475</td>
+                                <td class="td6">5</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yellow.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">YELLOW</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXL</td><td class="td5">₱ 475</td>
+                                <td class="td6">53</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yellow.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">YELLOW</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XL</td><td class="td5">₱ 475</td>
+                                <td class="td6">43</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yellow.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">YELLOW</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">L</td><td class="td5">₱ 475</td>
+                                <td class="td6">52</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yellow.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">YELLOW</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">M</td><td class="td5">₱ 475</td>
+                                <td class="td6">42</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yellow.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">YELLOW</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">S</td><td class="td5">₱ 475</td>
+                                <td class="td6">111</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yellow.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">YELLOW</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XS</td><td class="td5">₱ 475</td>
+                                <td class="td6">64</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <div class="image">
+                                        <img src=".\img\shirts\yellow.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="td2">YELLOW</td>
+                                <td class="td3">Shirt
+                                </td>
+                                <td class="td4">XXS</td><td class="td5">₱ 475</td>
+                                <td class="td6">26</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="notificationadmin">
+            
+        </section>
+
+        <section id="useraccountsadmin">
+            
+        </section>
+
+        <section id="newsadmin">
+            
+        </section>
+
+        <section id="settingsadmin">
+            
+        </section>
+
+        <script>
+            var bagtypeselect = document.getElementById('bagtype');
+            var bagtypeselect2 = document.getElementById('labelbagtype');
+            var bagtypeselect3 = document.getElementById('labelsizeshirt');
+            var bagtypeselect4 = document.getElementById('sizeshirt');
+            var bagtypeselect5 = document.getElementById('labelsizeshoes');
+            var bagtypeselect6 = document.getElementById('sizeshoes');
+            var bagtypeselect7 = document.getElementById('r4');
+            var bagtypeselect8 = document.getElementById('r45');
+        </script>
+
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="products.js"></script>
+</head>
+<body>
+
+    <div id="account">
+        <div id="accountcontainer">
+            <div id="x">
+                <a href="#" onclick="hideaccount()"><img src="./img/backicon.png" alt=""></a>
+            </div>
+            <div id="dp">
+                <a href=""><img src=".\img\accounticon2.png" alt=""></a>
+                <span style="font-size: 1.5vw; font-weight: 600;">JUAN DELA CRUZ</span>
+            </div>
+            <div id="accountnav">
+                <ul>
+                    <li><a href="account.html"><span><img src=".\img\ordersicon.png" alt=""></span>Orders</a></li>
+                    <li><a href="account.html"><span><img src=".\img\carticon.png" alt=""></span>Cart</a></li>
+                    <li><a href=""><span><img src=".\img\notificationicon.png" alt=""></span>Notification</a></li>
+                    <li><a href=""><span><img src=".\img\profiledetailsicon.png" alt=""></span>Profile Details</a></li>
+                    <li><a href=""><span><img src=".\img\helpcentericon.png" alt=""></span>Help Center</a></li>
+                    <li><a href=""><span><img src=".\img\logouticon.png" alt=""></span>Logout</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile">
+        <div id="mobilecontainer">
+            <div id="x">
+                <a href="#" onclick="hidenavigation()"><img src="./img/backicon2.png" alt=""></a>
+            </div>
+
+            <div id="mobilenavelements">
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="product.html" >PRODUCTS</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div id="headlogo">
+            <div id="shuttleprime">
+                <img src=".\img\logo.png" alt="" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <div id="mobilenav">
+                        <a href="#" onclick="shownavigation()">
+                            <img src=".\img\3lines.png" alt="">
+                        </a>
+                    </div>
+
+                    <div id="login" class="navlist"><a href="login.html">LOGIN</a></div>
+                    <li class="navlist"><a href="#">HOME</a></li>
+                    <li class="navlist"><a href="news.html">NEWS</a></li>
+                    <li class="navlist"><a href="product.html" >PRODUCTS</a></li>
+                    <li class="navlist"><a href="aboutus.html">ABOUT</a></li>
+
+                    <div id="accdetails" class="navlist">
+                        <input type="text" name="search" id="searchbar">
+                        <a href="#" onclick="showsearch()">
+                            <img src=".\img\searchicon.png" alt="" id="searchicon">
+                        </a>
+                        <a href="account.html"><img src=".\img\carticon2.png" alt=""></a>
+                        <a href="#" onclick="showaccount()" id="accounticon">
+                            <img src=".\img\accounticon.png" alt="">
+                        </a>
+                    </div>
+
+                    <div id="accdetails2" class="navlist">
+                        <a href="#" onclick="hidesearch()">
+                            <img src=".\img\searchicon.png" alt="" id="searchicon">
+                        </a>
+                        <a href="account.html"><img src=".\img\carticon2.png" alt=""></a>
+                        <a href="#" onclick="showaccount()" id="accounticon">
+                            <img src=".\img\accounticon.png" alt="">
+                        </a>
+                    </div>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="covers">
+            <div id="slide1" class="slideshow">
+                <img src=".\img\cover1.jpg" alt="" id="cover1">
+                <div id="phrasecontainer">
+                <p id="phrase">Setting the game high with quality products, <span>SHUTTLEPRIME</span> is your one-stop-shop badminton equipments. Complete your gaming fits with our badminton apparels</p>
+                </div>
+                <form action="product.html">
+                    <button class="products">SHOP NOW!</button>
+                </form>
+            </div>
+
+            <div id="slide2" class="slideshow">
+                <img src=".\img\cover2.png" alt="" id="cover2">
+                <a href="https://web.facebook.com/media/set/?vanity=100052497353745&set=a.114292693663975"><em>LEARN MORE</em></a>
+            </div>
+
+            <div id="slide3" class="slideshow">
+                <img src=".\img\cover3.jpg" alt="" id="cover3">
+                <em>FOLLOW US</em>
+                <div id="socmed">
+                    <a href="https://web.facebook.com/ShuttlePrime"><img src=".\img\fbicon.png" alt=""></a>
+                    <a href="https://www.tiktok.com/@shuttleprimeph"><img src=".\img\tiktokicon.jpg" alt=""></a>
+                    <a href="https://www.instagram.com/explore/tags/shuttleprime/?hl=en"><img src=".\img\igicon.jpg" alt=""></a>
+                </div>
+            </div>
+
+            <div id="slide4" class="slideshow">
+                <img src=".\img\cover4.jpg" alt="" id="cover4">
+                <a href="news.html">NEWS</a>
+            </div>
+
+            <div id="slide5" class="slideshow">
+                <img src=".\img\cover5.jpg" alt="" id="cover5">
+                <a href="product.html">PRODUCTS</a>
+            </div>
+
+            <div id="slide6" class="slideshow">
+                <div id="videocontainer">
+                    <video src=".\vid\shuttleprimevid.mp4" width="100%" height="100%" id="video1" loop>Video not supported</video>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </section>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+          </div>
+
+
+    </main>
+
+    <footer>
+        <div id="foot">
+            <div class="col">
+                <div id="foot1">
+                    <img src="./img/footlog.png" alt="" style="width: 100%; height: 100%;">
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot2">
+                    <p>Sports and Recreation</p>
+                    <br>
+                    <p>Contact Us: +63-936-407-6841</p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot3">
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot4">
+                    <div id="find">FIND US ON</div>
+                    <div id="socs">
+                        <a href="https://web.facebook.com/ShuttlePrime"><img src=".\img\fbicon.png" alt=""></a>
+                        <a href="https://www.tiktok.com/@shuttleprimeph"><img src=".\img\tiktokicon.jpg" alt=""></a>
+                        <a href="https://www.instagram.com/explore/tags/shuttleprime/?hl=en" alt=""><img src=".\img\igicon.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot5">
+                    <ul>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Accessibility</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="https://web.facebook.com/media/set/?vanity=100052497353745&set=a.114292693663975">Proof of Successful Transactions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        let slideIndex = 1;
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slideshow");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+    
+            if (slideIndex === 6) {
+                let video1 = document.querySelector("#slide6 video");
+                video1.play();
+            } else {
+                let video1 = document.querySelector("#slide6 video");
+                video1.pause();
+            }
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            showSlides(slideIndex);
+        });
+    </script>
+
+
+</body>
+</html>

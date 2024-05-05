@@ -1,0 +1,867 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    z-index: 1;
+    width: 100%;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+}
+nav{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 50%;
+    flex-wrap: wrap;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navlist{
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: aliceblue;
+    padding: 20px;
+}
+.navlist > a{
+    text-decoration: none;
+    color: white;
+}
+.navlist:hover{
+    text-shadow: 1px 1px 5px #ffffff, -1px -1px 5px #ffffff;
+}
+#mobilenav{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 2%;
+    z-index: 1;
+}
+#mobilenav a{
+    display: flex;
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        position: static;
+        background-color: black;
+    }
+    #navbar li a{
+        display: none;
+    }
+    #signup a{
+        display: none;
+    }
+    #accdetails #searchbar{
+        display: none;
+        position: absolute;
+        right: 12vw;
+        width: 10vw;
+        height: 2vw;
+    }
+    #mobilenav{
+        display: flex;
+    }
+    #mobile{
+        display: none;
+    }
+    #mobilecontainer{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 25%;
+        height: 20vw;
+        background-color: white;
+        z-index: 2;
+        flex-direction: column;
+    }
+    #mobilecontainer #x{
+        width: 7%;
+        height: 7%;
+        position: absolute;
+        right: 0;
+    }
+    #mobilenavelements ul{
+        margin-top: 10%;
+        padding-inline-start: 40px;
+    }
+    #mobilenavelements li{
+        list-style: none;
+        margin-bottom: 3%;
+    }
+    #mobilenavelements li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5vw;
+    }
+}
+
+#mobile{
+    display: none;
+}
+#account{
+    display: none;
+}
+
+#x{
+    width: 7%;
+    height: 7%;
+    display: flex;
+}
+#x a{
+    display: flex;
+}
+#accdetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5%;
+}
+#accdetails img{
+    width: 2vw;
+    height: 2vw;
+}
+#accdetails a{
+    width: 2vw;
+    height: 2vw;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#accdetails2{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5%;
+}
+#accdetails2 img{
+    width: 2vw;
+    height: 2vw;
+}
+#accdetails2 a{
+    width: 2vw;
+    height: 2vw;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#searchbar{
+    display: none;
+    position: absolute;
+    right: 10vw;
+    width: 10vw;
+    height: 2vw;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+main img{
+    width: 100%;
+    height: 100%;
+}
+main section{
+    width: 100%;
+    height: auto;
+}
+#navigation{
+    background-color: rgb(224, 180, 76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main nav{
+    margin-top: 2vw;
+    width: 90%;
+}
+#dp{
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    
+}
+#image{
+    height: 5vw;
+    width: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#adminname{
+    height: 5vw;
+    width: 9vw;
+    display: flex;
+    align-items: center;
+}
+#adminname h1{
+    font-size: 2vw;
+}
+#links{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#links ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+#links ul li{
+    list-style: none;
+    height: 4vw;
+    width: 16vw;
+    display: flex;
+    align-items: center;
+
+}
+#links ul li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: 700;
+}
+#links ul li a:hover{
+    color: black;
+}
+
+
+
+
+#dashboardadmin{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+}
+#dashboardsec{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    margin-bottom: 5vw;
+}
+#dashboardsec > a{
+    margin-top: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px gray;
+}
+#dashboardsec #graph1{
+    height: 15vw;
+    width: 20vw;
+}
+#dashboardsec #graph2{
+    height: 15vw;
+    width: 20vw;
+}
+#dashboardsec #graph3{
+    height: 15vw;
+    width: 20vw;
+}
+#dashboardsec #graph4{
+    height: 20vw;
+    width: 40vw;
+}
+#dashboardsec #graph5{
+    height: 17vw;
+    width: 23vw;
+}
+
+#ordersadmin{
+    display: none;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+}
+#orderssec{
+    width: 90%;
+    height: 46vw;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+#orderssec #ordersnav{
+    margin-top: 2vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#orderssec #ordersnav a{
+    width: 25%;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    font-weight: 900;
+    font-family:'Lucida Sans';
+    text-align: center;
+}
+#orderssec #ordersnav a:hover{
+    border-bottom: 1.5px solid;
+}
+
+#pendingorders{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.adminorders{
+    margin-top: 2vw;
+    background-color: white;
+    height: 10vw;
+    width: 100%;
+    display: flex;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.adminorders .ferson{
+    background-color: white;
+    width: 28vw;
+    height: inherit;
+}
+.adminorders .ferson h2{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    font-size: 2vw;
+}
+.adminorders .ferson h3{
+    margin-top: 1vw;
+    font-size: 1vw;
+    font-weight: 100;
+    margin-left: 1vw;
+}
+.adminorders .itemaru{
+    background-color: white;
+    width: 20vw;
+    height: inherit;
+}
+.adminorders .itemaru h2{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    font-size: 2vw;
+}
+.adminorders .itemaru h3{
+    margin-top: 1vw;
+    font-size: 1vw;
+    font-weight: 100;
+    margin-left: 1vw;
+}
+.adminorders .confirmable{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15vw;
+    height: inherit;
+}
+.adminorders .confirmable h3{
+    font-size: 1vw;
+    font-weight: 100;
+    margin-left: 1vw;
+}
+.adminorders .confirmable h2{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    font-size: 1.5vw;
+}
+.adminorders form{
+    background-color: white;
+    width: 8vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adminorders input{
+    width: 7vw;
+    height: 2.5vw;
+    font-size: 1.3vw;
+    font-weight: 900;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: solid;
+}
+.adminorders input:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#requestorders{
+    display: none;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+#onshiporders{
+    display: none;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+#completedorders{
+    display: none;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+
+
+#inventoryadmin{
+    display: none;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+#inventorysec{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+#inventorysec #inventorycontainer{
+    width: 100%;
+    height: auto;
+}
+
+#inventorysec #additem{
+    text-decoration: none;
+    color: black;
+    margin-top: 2vw;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+}
+#inventorysec #additem:hover{
+    background-color: lightcyan;
+}
+
+#inventorysec #additem #plus{
+    border: 2px solid;
+    height: 3vw;
+    width: 3vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: 900;
+}
+#inventorysec #additem h1{
+    color: black;
+    font-size: 2vw;
+}
+
+#inventorysec #addingitem{
+    margin-top: 2vw;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#inventorysec #addingitem .row{
+    height: 3vw;
+    width: 90%;
+    margin-top: .5vw;
+    display: flex;
+    align-items: center;
+}
+
+#inventorysec #addingitem #r0{
+    margin-top: 2vw;
+    height: 10vw;
+}
+#inventorysec #addingitem #r0 h2{
+    font-size: 1.5vw;
+    font-weight: 100;  
+    margin-right: 2vw;
+}
+#inventorysec #addingitem #r0 #itemimage{
+    border: solid;
+    height: 8vw;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+#inventorysec #addingitem #r0 #itemimage #image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inventorysec #addingitem #r1 label{
+    font-size: 1.5vw;
+    font-weight: 100;  
+    margin-right: 1.5vw;
+}
+#inventorysec #addingitem #r1 input{
+    border: none;
+    border-bottom: 2px solid;
+    height: 1.5vw;
+    width: 20vw;
+    font-size: 1.5vw;
+    text-indent: 1vw;
+    outline: none;
+}
+#inventorysec #addingitem #r2 label{
+    font-size: 1.5vw;
+    font-weight: 100;  
+    margin-right: 2vw;
+    margin-left: .5vw;
+}
+#inventorysec #addingitem #r2 select{ 
+    border: 2px solid;
+    height: 2.5vw;
+    font-size: 1.3vw;
+    font-weight: 100;
+    margin-right: 5vw;
+}
+#inventorysec #addingitem #r3{
+    height: 10vw;
+    width: 90%;
+    margin-top: .5vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#inventorysec #addingitem #r3 label{
+    font-size: 1.5vw;
+    font-weight: 100;  
+    margin-right: 2vw;
+    margin-bottom: .3vw;
+}
+#inventorysec #addingitem #r3 textarea{
+    border: 2px solid;
+    height: 7.7vw;
+    margin-right: 2vw;
+    font-size: 1.2vw;
+    margin-left: .2vw;
+    display: flex;
+    align-items: baseline;
+}
+#inventorysec #addingitem #r4 label{
+    font-size: 1.5vw;
+    font-weight: 100;  
+    margin-right: 2vw;
+    margin-left: 4vw;
+}
+#inventorysec #addingitem #r4 #labelsizeshoes{
+    font-size: 1.5vw;
+    font-weight: 100;  
+    margin-right: 2vw;
+    margin-left: .7vw;
+}
+
+#inventorysec #addingitem #r4 select{ 
+    border: 2px solid;
+    height: 2.5vw;
+    font-size: 1.3vw;
+    font-weight: 100;
+    margin-right: 5vw;
+}
+
+#inventorysec #addingitem #r45 label{
+    font-size: 1.5vw;
+    font-weight: 100;  
+    margin-right: 1.4vw;
+    margin-left: 2.1vw;
+}
+#inventorysec #addingitem #r45 input{
+    border: none;
+    border-bottom: 2px solid;
+    height: 1.5vw;
+    width: 15vw;
+    font-size: 1.5vw;
+    text-indent: 1vw;
+    outline: none;
+}
+#inventorysec #addingitem #r6 label{
+    font-size: 1.5vw;
+    font-weight: 100;  
+    margin-right: 1.5vw;
+}
+#inventorysec #addingitem #r6 input{
+    border: none;
+    border-bottom: 2px solid;
+    height: 1.5vw;
+    width: 5vw;
+    font-size: 1.5vw;
+    text-indent: 1vw;
+    outline: none;
+}
+#inventorysec #addingitem #r5 label{
+    font-size: 1.5vw;
+    font-weight: 100;  
+    margin-right: 1.4vw;
+    margin-left: 3vw;
+}
+#inventorysec #addingitem #r5 input{
+    border: none;
+    border-bottom: 2px solid;
+    height: 1.5vw;
+    width: 7vw;
+    font-size: 1.5vw;
+    text-indent: 1vw;
+    outline: none;
+}
+
+#inventorysec #addingitem #r7{ 
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1vw;
+}
+
+#inventorysec #addingitem #r7 input{ 
+    font-size: 1.3vw;
+    font-weight: 600;
+    border: solid;
+    height: 2vw;
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+#inventorysec #addingitem #r7 input:hover{ 
+    background-color: black;
+    color: white;
+}
+
+
+#inventorysec #inventorycontainer{
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#inventorysec #inventorycontainer #tablecontainer{
+    margin-top: 3vw;
+    box-shadow: 2px 2px 5px gray;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+#inventorysec #inventorycontainer #tablecontainer #inventoryhead{
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5vw;
+}
+
+#inventorysec #inventorycontainer #tablecontainer #inventoryhead label{
+    margin-left: 2vw;
+    font-size: 1vw;
+}
+#inventorysec #inventorycontainer #tablecontainer #inventoryhead span{
+    margin-left: 2vw;
+    height: 1.3vw;
+    width: 1.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#inventorysec #inventorycontainer #tablecontainer #inventoryhead select, input{
+    margin-left: .5vw;
+    border: .1vw solid;
+    height: 1.5vw;
+    font-size: 1.2vw;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+}
+#inventorysec #inventorycontainer #tablehead{
+    width: 70vw;
+    height: auto;
+    display: flex;
+}
+#inventorysec #inventorycontainer #tablehead > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    font-size: 2vw;
+    font-weight: 700;
+}
+#inventorysec #inventorycontainer #tablehead #th1{
+    width: 15%;
+}
+#inventorysec #inventorycontainer #tablehead #th2{
+    width: 25%;
+}
+#inventorysec #inventorycontainer #tablehead #th3{
+    width: 15%;
+}
+#inventorysec #inventorycontainer #tablehead #th4{
+    width: 15%;
+}
+#inventorysec #inventorycontainer #tablehead #th5{
+    width: 15%;
+}
+#inventorysec #inventorycontainer #tablehead #th6{
+    width: 15%;
+}
+#inventorysec #inventorycontainer table{
+    width: 100%;
+    height: 64vw;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 2vw;
+}
+#inventorysec #inventorycontainer table tr{
+    display: flex;
+    margin-bottom: 1vw;
+    height: 7vw;
+}
+#inventorysec #inventorycontainer table .td1{
+    width: 15%;
+    font-size: 1.3vw;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inventorysec #inventorycontainer table td .image{
+    border: 1px solid;
+    height: 6vw;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#inventorysec #inventorycontainer table .td2{
+    width: 25%;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: lighter;
+}
+#inventorysec #inventorycontainer table .td3{
+    width: 15%;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: lighter;
+}
+#inventorysec #inventorycontainer table .td4{
+    width: 15%;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: lighter;
+}
+
+#inventorysec #inventorycontainer table .td5{
+    width: 15%;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: lighter;
+}
+#inventorysec #inventorycontainer table .td6{
+    width: 15%;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+#notificationadmin{
+    display: none;
+}
+
+
+
+#useraccountsadmin{
+    display: none;
+}
+
+
+#newsadmin{
+    display: none;
+}
+
+
+#settingsadmin{
+    display: none;
+}

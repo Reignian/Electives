@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="order.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div id="account">
+        <div id="accountcontainer">
+            <div id="x">
+                <a href="#" onclick="hideaccount()"><img src="./img/backicon.png" alt=""></a>
+            </div>
+            <div id="dp">
+                <a href=""><img src=".\img\accounticon2.png" alt=""></a>
+                <span style="font-size: 1.5vw; font-weight: 600;">JUAN DELA CRUZ</span>
+            </div>
+            <div id="accountnav">
+                <ul>
+                    <li><a href="account.html"><span><img src=".\img\ordersicon.png" alt=""></span>Orders</a></li>
+                    <li><a href="account.html"><span><img src=".\img\carticon.png" alt=""></span>Cart</a></li>
+                    <li><a href=""><span><img src=".\img\notificationicon.png" alt=""></span>Notification</a></li>
+                    <li><a href=""><span><img src=".\img\profiledetailsicon.png" alt=""></span>Profile Details</a></li>
+                    <li><a href=""><span><img src=".\img\helpcentericon.png" alt=""></span>Help Center</a></li>
+                    <li><a href=""><span><img src=".\img\logouticon.png" alt=""></span>Logout</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile">
+        <div id="mobilecontainer">
+            <div id="x">
+                <a href="#" onclick="hidenavigation()"><img src="./img/backicon2.png" alt=""></a>
+            </div>
+
+            <div id="mobilenavelements">
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="product.html" >PRODUCTS</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div id="headlogo">
+            <div id="shuttleprime">
+                <img src=".\img\logo.png" alt="" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <div id="mobilenav">
+                        <a href="#" onclick="shownavigation()">
+                            <img src=".\img\3lines.png" alt="">
+                        </a>
+                    </div>
+
+                    <li class="navlist"><a href="index.html">HOME</a></li>
+                    <li class="navlist"><a href="news.html">NEWS</a></li>
+                    <li class="navlist"><a href="product.html" >PRODUCTS</a></li>
+                    <li class="navlist"><a href="aboutus.html">ABOUT</a></li>
+
+                    <div id="accdetails" class="navlist">
+                        <input type="text" name="search" id="searchbar">
+                        <a href="#" onclick="showsearch()">
+                            <img src=".\img\searchicon.png" alt="" id="searchicon">
+                        </a>
+                        <a href="account.html"><img src=".\img\carticon2.png" alt=""></a>
+                        <a href="#" onclick="showaccount()" id="accounticon">
+                            <img src=".\img\accounticon.png" alt="">
+                        </a>
+                    </div>
+
+                    <div id="accdetails2" class="navlist">
+                        <a href="#" onclick="hidesearch()">
+                            <img src=".\img\searchicon.png" alt="" id="searchicon">
+                        </a>
+                        <a href="account.html"><img src=".\img\carticon2.png" alt=""></a>
+                        <a href="#" onclick="showaccount()" id="accounticon">
+                            <img src=".\img\accounticon.png" alt="">
+                        </a>
+                    </div>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="productvisuals">
+            <div id="productimage">
+                <div id="image1" class="slideshow fade">
+                    <img src=".\img\shirts\violet.jpg" alt="">
+                </div>
+                <div id="image2" class="slideshow fade">
+                    <img src=".\img\shirts\violet2.jpg" alt="">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+        </div>
+        <form action="account.html" id="productdetails" >
+            <div id="name">
+                <h1>VIOLET</h1>
+            </div>
+            <div id="reviews">
+                <span><a href="">49</a></span>
+                <span style="margin-right: 2vw;">
+                    <div id="stars">
+                        <div><img src=".\img\star.png" alt=""></div>
+                        <div><img src=".\img\star.png" alt=""></div>
+                        <div><img src=".\img\star.png" alt=""></div>
+                        <div><img src=".\img\star.png" alt=""></div>
+                        <div><img src=".\img\star.png" alt=""></div>
+                    </div>
+                </span>
+                <span><a href="" style="font-size: 1.5vw;">70 Reviews</a></span>
+            </div>
+            <div id="pricetag">
+                <p>₱ 499</p>
+            </div>
+
+            <div id="size">
+                <h1 style="font-size: 2vw;">Size:</h1>
+                <a href="" style="font-size: 1vw;">Size Chart</a>
+                <div id="first">
+                    <input type="radio" id="xxs" name="size" value="xxs" checked="checked">
+                    <label for="xxs">XXS</label>
+                    <input type="radio" id="xs" name="size" value="xs">
+                    <label for="xs">XS</label>
+                    <input type="radio" id="s" name="size" value="s">
+                    <label for="s">S</label>
+                    <input type="radio" id="m" name="size" value="m">
+                    <label for="m">M</label>
+                    <input type="radio" id="l" name="size" value="l">
+                    <label for="l">L</label>
+                    <input type="radio" id="xl" name="size" value="xl">
+                    <label for="xl">XL</label>
+                    <input type="radio" id="xxl" name="size" value="xxl">
+                    <label for="xxl">XXL</label>
+                    <input type="radio" id="xxxl" name="size" value="xxl">
+                    <label for="xxxl">XXXL</label>
+                </div>
+            </div>
+            <div id="quantitycount">
+                <h1 style="font-size: 2vw;">Quantity:</h1>
+                <div id="second">
+                    <label for="quantity"></label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+            </div>
+            <br>
+            <div id="note">
+                <h1 style="font-size: 2vw;">Jersey Name:</h1>
+                <div id="last">
+                    <input type="text" id="jerseyname" name="jname">
+                    <label for="jname"></label>
+                </div>
+            </div>
+            <br>
+            <div id="order">
+                <div id="done">
+                    <input type="submit" value="ADD TO CART">
+                    <input type="submit" value="BUY NOW">
+                </div>
+            </div>
+            <br><br>
+            <div id="desc">
+                <h1 style="font-size: 2vw;">Description</h1>
+                <br>
+                <p>
+                    This vibrant jersey features a black collar adorned with a mesmerizing blend of blue and purple tie-dye patterns. The sublimation process ensures that the colors are vivid, seamlessly integrated into the fabric, and resistant to fading. Whether you’re on the field, court, or simply want to make a style statement, this jersey combines comfort, uniqueness, and eye-catching aesthetics.
+                </p>
+                <p>
+                    You can imagine it as a canvas where the tie-dye swirls dance harmoniously, creating an artistic fusion of colors. It’s perfect for sports teams, casual wear, or even as a fashion-forward choice. Customize it with your team name, surname, and player number to make it uniquely yours!
+                </p>
+            </div>
+            <br>
+        </form>
+    </main>
+
+    <footer>
+        <div id="foot">
+            <div class="col">
+                <div id="foot1">
+                    <img src="./img/footlog.png" alt="" style="width: 100%; height: 100%;">
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot2">
+                    <p>Sports and Recreation</p>
+                    <br>
+                    <p>Contact Us: +63-936-407-6841</p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot3">
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot4">
+                    <div id="find">FIND US ON</div>
+                    <div id="socs">
+                        <a href="https://web.facebook.com/ShuttlePrime"><img src=".\img\fbicon.png" alt=""></a>
+                        <a href="https://www.tiktok.com/@shuttleprimeph"><img src=".\img\tiktokicon.jpg" alt=""></a>
+                        <a href="https://www.instagram.com/explore/tags/shuttleprime/?hl=en" alt=""><img src=".\img\igicon.jpg"></a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col">
+                <div id="foot5">
+                    <ul>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Accessibility</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="https://web.facebook.com/media/set/?vanity=100052497353745&set=a.114292693663975">Proof of Successful Transactions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slideshow");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";
+            }
+        document.addEventListener("DOMContentLoaded", function() {
+            showSlides(slideIndex);
+                    });
+    </script>
+
+</body>
+</html>

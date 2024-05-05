@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header div{
+    width: 100%;
+    height: 4vw;
+}
+#logincontainer{
+    display: flex;
+    width: 100%;
+    height: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+#box1 img{
+    width: 100%;
+}
+#box1{
+    width: 40vw;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+
+#signuptop{
+    display: none;
+    align-items: center;
+}
+#signuptop p{
+    font-size: 2vw;
+    font-weight: 700;
+    margin-left: 2%;
+}
+
+
+#box2{
+    width: 35vw;
+    height: 45vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    margin-left: 5%;
+    flex-direction: column;
+    border-radius: 2vw;
+    overflow: hidden;
+
+    border: solid;
+}
+#box2 #signupheader{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+#box2 form{
+    height: 90%;
+    width: 90%;
+    margin-top: 5%;
+}
+#box2 #signupmain p{
+    margin-bottom: 1%;
+    margin-top: 5%;
+    font-size: 1vw;
+}
+#box2 #signupmain span{
+    font-size: 1vw;
+}
+#box2 .textbox{
+    width: 95%;
+    height: 3vw;
+    border: solid;
+    border-width: 2px;
+}
+#box2 #agree{
+    width: 1vw;
+    height: 1vw;
+    margin: 0;
+}
+
+#box2 #signupmain #button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vw;
+
+}
+#box2 #signupbutton{
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 800;
+    width: 50%;
+    height: 3.5vw;
+}
+#box2 #signupbutton:hover{
+    text-shadow: 1px 1px 5px #ffffff, -1px -1px 5px #ffffff;
+}
+
+
+
+
+#logintop{
+    display: flex;
+    align-items: center;
+}
+#logintop p{
+    font-size: 2vw;
+    font-weight: 700;
+    margin-left: 2%;
+}
+
+#box3{
+    width: 35vw;
+    height: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    margin-left: 5%;
+    flex-direction: column;
+    border-radius: 2vw;
+    overflow: hidden;
+
+    border: solid;
+}
+#box3 #loginheader{
+    width: 100%;
+    height: 13%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+#box3 #loginheader #fb{
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1.5vw;
+    margin-left: 3vw;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+#box3 #loginheader #google{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#box3 form{
+    height: 90%;
+    width: 90%;
+    margin-top: 5%;
+}
+#box3 #loginmain p{
+    margin-bottom: 1%;
+    margin-top: 5%;
+    font-size: 1vw;
+}
+#box3 #loginmain span{
+    font-size: 1vw;
+}
+#box3 .textbox{
+    width: 95%;
+    height: 3vw;
+    border: solid;
+    border-width: 2px;
+}
+#box3 #agree{
+    width: 1vw;
+    height: 1vw;
+    margin: 0;
+}
+
+#box3 #loginmain #button{
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vw;
+
+}
+#box3 #loginbutton{
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 800;
+    width: 50%;
+    height: 3.5vw;
+}
+#box3 #loginbutton:hover{
+    text-shadow: 1px 1px 5px #ffffff, -1px -1px 5px #ffffff;
+}
