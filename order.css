@@ -96,7 +96,7 @@ nav ul{
         left: 0;
         top: 0;
         width: 25%;
-        height: 20vw;
+        height: auto;
         background-color: white;
         z-index: 2;
         flex-direction: column;
@@ -113,7 +113,6 @@ nav ul{
     }
     #mobilenavelements li{
         list-style: none;
-        margin-bottom: 3%;
     }
     #mobilenavelements li a{
         text-decoration: none;
